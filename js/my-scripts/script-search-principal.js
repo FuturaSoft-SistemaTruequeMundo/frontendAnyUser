@@ -36,7 +36,7 @@ async function searcherGet(texto, country, city, titleText){
     let colorState = '';
     let statusProduct = '';
 
-    const urlBase = 'https://truequeprueba.herokuapp.com/';
+    const urlBase = 'http://truequemundo.xyz:3000/';
     const url = urlBase + 'events/all';
     
     const dataDetails = {
@@ -65,7 +65,7 @@ async function searcherGet(texto, country, city, titleText){
     })
 
     function itemTemplate(it){
-        const urlFotos = 'https://truequeprueba.herokuapp.com/Public/uploads/';
+        const urlFotos = 'http://truequemundo.xyz:3000/Public/uploads/';
         cont++;
 
         if(it.estado == 'disponible'){
